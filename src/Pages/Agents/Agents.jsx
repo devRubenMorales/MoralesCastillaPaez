@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { GetAgents } from '../../api'
+import Navbar from '../../components/Navbar/Navbar';
 
 export const Agents = () => {
 
@@ -20,6 +21,9 @@ export const Agents = () => {
     console.log("PJ: " ,agentes);
     
     return (
+        <>
+        <Navbar/>
+
         <div>
             <h1>Agentes</h1>
             <ul>
@@ -31,6 +35,7 @@ export const Agents = () => {
                 ))}
             </ul>
         </div>
+        </>
     );
 
 }
