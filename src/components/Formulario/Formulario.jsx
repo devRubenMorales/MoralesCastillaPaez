@@ -15,6 +15,7 @@ export function Formulario (){
           setError(true)
           return  
         }
+        console.log('nombre:', nombre,'contraseña:', contraseña)
         setError(false)
         Navigate('/')
     }

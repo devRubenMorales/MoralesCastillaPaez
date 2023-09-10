@@ -8,7 +8,12 @@ export const GetAgents = async() => {
 
     const url = '/agents' ;
     const response = await instance.get(url);
-    console.log("RESPUESTA 1: " ,response.data.data);
     return response.data.data
 
+}
+
+export const GetMaps = async () => {
+    const url = "/maps" 
+    const response = await instance.get(url);
+    return response.data.data;
 }
