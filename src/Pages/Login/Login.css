@@ -1,0 +1,14 @@
+.login-page {
+    width: 100%;
+    background-image: url('public/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: #0b0606;  
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }

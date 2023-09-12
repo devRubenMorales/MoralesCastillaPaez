@@ -1,9 +1,15 @@
 import React from 'react'
 import { Formulario } from '../../components/Formulario/Formulario'
+import './Login.css'
 
 function Login() {
   return (
-    <div> <Formulario/> </div>
+    
+    <div className='login-page'>
+      <div>  
+      <Formulario/> 
+      </div>
+    </div>
   )
 }
 

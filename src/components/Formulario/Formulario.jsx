@@ -21,32 +21,6 @@ export function Formulario (){
     }
 
     return(
-        // <section>
-        //     <div class="form-container">
-        //     <h1 className="title">Login</h1>
-        //     <form 
-        //        className="formulario"
-        //        onSubmit={handleSubmit}
-            
-        //     >
-        //         <div className="input-group">
-        //         <input className="input-group" type="text"
-        //         value={nombre}
-        //         onChange={e => setNombre(e.target.value)}
-        //         />
-        //         </div>
-               
-        //        <div className="input-group">
-        //         <input   type="password"
-        //         value={contraseña}
-        //         onChange={e => setContraseña(e.target.value)}
-        //         />
-        //         </div> 
-        //         <button className="sign">Iniciar Sesion</button>
-        //     </form>
-        //     {error && <p>Todos los campos son obligatorios</p>}
-        //     </div>
-        // </section>
         <section className="form-section">
         <div class="form-container">
 	<p class="title">Login</p>
