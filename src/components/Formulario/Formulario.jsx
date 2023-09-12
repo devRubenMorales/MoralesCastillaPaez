@@ -21,24 +21,55 @@ export function Formulario (){
     }
 
     return(
-        <section>
-            <h1>Login</h1>
-            <form 
-               className="formulario"
-               onSubmit={handleSubmit}
+        // <section>
+        //     <div class="form-container">
+        //     <h1 className="title">Login</h1>
+        //     <form 
+        //        className="formulario"
+        //        onSubmit={handleSubmit}
             
-            >
-                <input type="text"
-                value={nombre}
-                onChange={e => setNombre(e.target.value)}
-                />
-                <input type="password"
-                value={contraseña}
-                onChange={e => setContraseña(e.target.value)}
-                />
-                <button>Iniciar Sesion</button>
-            </form>
-            {error && <p>Todos los campos son obligatorios</p>}
-        </section>
+        //     >
+        //         <div className="input-group">
+        //         <input className="input-group" type="text"
+        //         value={nombre}
+        //         onChange={e => setNombre(e.target.value)}
+        //         />
+        //         </div>
+               
+        //        <div className="input-group">
+        //         <input   type="password"
+        //         value={contraseña}
+        //         onChange={e => setContraseña(e.target.value)}
+        //         />
+        //         </div> 
+        //         <button className="sign">Iniciar Sesion</button>
+        //     </form>
+        //     {error && <p>Todos los campos son obligatorios</p>}
+        //     </div>
+        // </section>
+        <section className="form-section">
+        <div class="form-container">
+	<p class="title">Login</p>
+	<form class="form"
+     onSubmit={handleSubmit}>
+        
+		<div class="input-group">
+			<label for="username">Nombre</label>
+			<input type="text" name="username" id="username" placeholder=""
+            value={nombre}
+                    onChange={e => setNombre(e.target.value)}/>
+		</div>
+		<div class="input-group">
+			<label for="password">Contraseña</label>
+			<input type="password" name="password" id="password" placeholder=""value={contraseña}
+                onChange={e => setContraseña(e.target.value)}/>
+			
+		</div>
+		<button class="sign">Ingresar</button>
+	</form>
+	
+	{error && <p>Todos los campos son obligatorios</p>}
+</div>
+</section>
     )
 }

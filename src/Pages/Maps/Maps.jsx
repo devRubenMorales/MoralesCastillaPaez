@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { GetMaps } from '../../api'
 import Navbar from '../../components/Navbar/Navbar';
 import { CardMapas } from '../../components/CardMapas/CardMapas';
+import "./Maps.css"
 
 export const Maps = () => {
 

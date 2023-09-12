@@ -1,0 +1,17 @@
+.cardmapa-button img{
+    width: 300px;
+    margin: 0 auto;
+    
+
+}
+.cardmapa-container{
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #011522;
+    border-radius: 8px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }

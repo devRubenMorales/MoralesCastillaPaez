@@ -1,4 +1,5 @@
 import React from 'react'
+import "./CardMapas.css"
 
 
 export const CardMapas = ({data}) => {
