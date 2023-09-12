@@ -1,0 +1,24 @@
+.agentes-page {
+    width: 100%;
+    background-image: url('public/backgroundhome.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: #0b0606;  
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .agentes-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr)); 
+    gap: 20px;
+    margin-top: 15px;
+    place-items: center;
+  }
+  

@@ -1,0 +1,82 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .modal-content{
+    background: rgba(58, 56, 56, 0.9);
+    color: rgb(255, 255, 255);
+    height: 500px;
+    width: 800px;
+    display: flex;
+    border-radius: 15px;
+  }
+  .modal-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-portrait{
+    width: 550px;
+    position: fixed;
+    margin-bottom: 30px;
+  }
+
+  .img-background{
+    width: 80%;
+  }
+
+  .modal-izquierda{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-derecha{
+    width: 250px;
+  }
+
+  .h2-container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-info{
+    height: 400px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .abilities-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .modal-info img{
+    width: 50px;
+  }
+
+  .modal-info p{
+    padding-top: 30px;
+    display: flex;
+    text-align: justify;
+  }
+  

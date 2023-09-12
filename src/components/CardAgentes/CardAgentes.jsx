@@ -1,35 +1,22 @@
 import React, { useState } from 'react'
+import { ModalAgente } from './ModalAgente/ModalAgente'
+import './CardAgentes.css'
 
 export const CardAgentes = ({data}) => {
 
-const[modal, setModal] = useState(false);
+  const [modal, setModal] = useState(false);
 
-    const abrirModal = () => {
-        setModal(!modal);
-        console.log("MODAL: " , modal)
-    };
+  const toggleModal = () => {
+    setModal(!modal)
+  }
 
-
-    return (
-        <div className='cardagente-container'>
-            <div onClick={abrirModal} className='cardagente-button'>
-                <h2>{data.displayName}</h2>
-                
-                
-            </div>
-
-            {modal ? (
-    <div className='cardagente-container'>
-        <div className='cardagente-button'>
-            
-            <img src={data.displayIcon} alt={data.displayName} />
-            <span>{data.description} </span>
-            <button onClick={abrirModal}>Cerrar</button>
-        </div>
+  return (
+    <>
+    <div className="cardagente-container" onClick={toggleModal}>
+        <img src={data.displayIcon} alt={data.displayName} />
+        <h2>{data.displayName}</h2>
     </div>
-) : null}
-
-        </div>
-        
-    )
+      {modal && <ModalAgente data={data} toggleModal={toggleModal}/>}
+    </>
+  )
 }
