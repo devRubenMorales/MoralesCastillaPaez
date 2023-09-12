@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { GetAgents } from '../../api'
 import Navbar from '../../components/Navbar/Navbar';
+import { CardAgentes } from '../../components/CardAgentes/CardAgentes';
 
 export const Agents = () => {
 
@@ -24,16 +25,15 @@ export const Agents = () => {
         <>
         <Navbar/>
 
-        <div>
+        <div className='agentes-page'>
             <h1>Agentes</h1>
-            <ul>
-                {agentes.map((agente, index) => (
-                    <li key={index}>
-                        <strong>Nombre:</strong> {agente.displayName}<br />
-                        <img src={agente.displayIcon} alt={`Imagen de ${agente.displayName}`} />
-                    </li>
+            <div className='agentes-container'>
+                {agentes.filter((agentes) => {
+                    return agentes.uuid != "ded3520f-4264-162d-b080e2abccf9"
+                }).map((agentes) => (
+                    <CardAgentes key={agentes.uuid} data={agentes} />
                 ))}
-            </ul>
+            </div>            
         </div>
         </>
     );
